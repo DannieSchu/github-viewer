@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserControls matches a snapshot 1`] = `
+<Fragment>
+  <span>
+    Enter a GitHub username: 
+  </span>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="DannieSchu"
+  />
+</Fragment>
+`;
