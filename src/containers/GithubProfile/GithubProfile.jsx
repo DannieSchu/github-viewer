@@ -28,6 +28,13 @@ export default class GithubProfile extends Component {
   render() {
     const { repos, profile, username } = this.state;
 
+    const display = username === profile.login ?
+      <>
+        <UserDisplay {...profile} /> 
+        <Repos repos={repos} />
+      </> 
+      : 'Enter a valid username';
+
     return (
       <>
         <Header />
@@ -35,8 +42,7 @@ export default class GithubProfile extends Component {
           username={username}
           onChange={this.handleChange} 
           onSubmit={this.handleSubmit} />
-        <UserDisplay {...profile} />
-        <Repos repos={repos} />
+        {display}
       </>
     );
   }

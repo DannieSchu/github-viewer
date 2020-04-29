@@ -3,14 +3,14 @@
 exports[`UserControls matches a snapshot 1`] = `
 <Fragment>
   <form>
-    Enter a GitHub username:
     <input
       onChange={[Function]}
+      placeholder="Username"
       type="text"
       value="DannieSchu"
     />
     <button>
-      Go!
+      Get Profile
     </button>
   </form>
 </Fragment>

@@ -5,9 +5,8 @@ const UserControls = ({ username, onChange, onSubmit }) => {
   return (
     <>
       <form onSubmit={onSubmit}>
-        Enter a GitHub username:
-        <input type='text' value={username} onChange={onChange} />
-        <button>Go!</button>
+        <input type="text" placeholder="Username" value={username} onChange={onChange} />
+        <button>Get Profile</button>
       </form>
     </>
   );
