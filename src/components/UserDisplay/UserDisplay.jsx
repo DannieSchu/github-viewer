@@ -21,12 +21,12 @@ const UserDisplay = ({ login, avatar_url, name, followers, following, html_url }
 };
 
 UserDisplay.propTypes = {
-  login: PropTypes.string,  
-  avatar_url: PropTypes.string,
-  name: PropTypes.string,
-  followers: PropTypes.number,
-  following: PropTypes.number,
-  html_url: PropTypes.string    
+  login: PropTypes.string.isRequired,  
+  avatar_url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  following: PropTypes.number.isRequired,
+  html_url: PropTypes.string.isRequired    
 };
 
 export default UserDisplay;
