@@ -1,11 +1,15 @@
 import React from 'react';
-import UserControls from '../UserControls/UserControls.jsx';
+import UserDisplay from '../UserDisplay/UserDisplay.jsx';
 
 export default function App() {
   return (
-    <UserControls
+    <UserDisplay
+      avatar="https://avatars0.githubusercontent.com/u/55268278?v=4"
+      fullName="Dannie Schumaker"
       username="DannieSchu"
-      onNameChange={() => {}}
+      followers="0"
+      following="0"
+      url="https://github.com/DannieSchu"
     />
   );
 }

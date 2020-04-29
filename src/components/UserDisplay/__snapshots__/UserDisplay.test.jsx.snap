@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDisplay matches a snapshot 1`] = `
+<Fragment>
+  <img
+    alt="Dannie Schumaker"
+    src="https://avatars0.githubusercontent.com/u/55268278?v=4"
+  />
+  <section>
+    <article>
+      <h2>
+        Dannie Schumaker
+      </h2>
+      <h3>
+        DannieSchu
+      </h3>
+    </article>
+    <article>
+      <p>
+        Followers:
+        <br />
+        0
+      </p>
+      <p>
+        Following:
+        <br />
+        0
+      </p>
+      <a
+        href="https://github.com/DannieSchu"
+        target="blank"
+      >
+        https://github.com/DannieSchu
+      </a>
+    </article>
+  </section>
+</Fragment>
+`;
