@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UserDisplay = ({ avatar, fullName, username, followers, following, url }) => {
+const UserDisplay = ({ login, avatar_url, name, followers, following, html_url }) => {
   return (
     <section>
-      <img src={avatar} alt={fullName} />
+      <img src={avatar_url} alt={name} />
       <article>
         <div>
-          <h2>{fullName}</h2>
-          <h3>{username}</h3>
+          <h2>{name}</h2>
+          <h3>{login}</h3>
         </div>
         <div>
           <p>Followers:<br/>{followers}</p>
           <p>Following:<br/>{following}</p>
-          <a href={url} target="blank">{url}</a>
+          <a href={html_url} target="blank">{html_url}</a>
         </div>
       </article>
     </section>
@@ -21,12 +21,12 @@ const UserDisplay = ({ avatar, fullName, username, followers, following, url }) 
 };
 
 UserDisplay.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  fullName: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  following: PropTypes.number.isRequired,
-  url: PropTypes.string.isRequired
+  login: PropTypes.string,  
+  avatar_url: PropTypes.string,
+  name: PropTypes.string,
+  followers: PropTypes.number,
+  following: PropTypes.number,
+  html_url: PropTypes.string    
 };
 
 export default UserDisplay;
