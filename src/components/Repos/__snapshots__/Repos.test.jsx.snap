@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos matches a snapshot 1`] = `
+<ul>
+  <li
+    key="3529521"
+  >
+    <Repo
+      dateCreated="2020-01-14T00:49:15Z"
+      dateUpdated="2020-01-14T00:49:15Z"
+      id={3529521}
+      language="JavaScript"
+      repoName="About-Me"
+      repoUrl="https://github.com/DannieSchu/About-Me"
+    />
+  </li>
+  <li
+    key="846732"
+  >
+    <Repo
+      dateCreated="2020-01-14T00:49:15Z"
+      dateUpdated="2020-01-14T00:49:15Z"
+      id={846732}
+      language="JavaScript"
+      repoName="Bus-Mall"
+      repoUrl="https://github.com/DannieSchu/Bus-Mall"
+    />
+  </li>
+</ul>
+`;

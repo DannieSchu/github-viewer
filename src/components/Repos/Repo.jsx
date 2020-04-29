@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Repo = ({ repoName, repoUrl, language, dateCreated, dateUpdated }) => {
   return (
-    <article>
+    <>
       <a href={repoUrl} target="blank">{repoName}</a>
       <p>Language: {language}</p>
       <p>Created: {dateCreated}</p>
       <p>Updated: {dateUpdated}</p>
-    </article>
+    </>
   );
 };
 
