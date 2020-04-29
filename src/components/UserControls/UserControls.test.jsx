@@ -7,7 +7,8 @@ describe('UserControls', () => {
     const wrapper = shallow(
       <UserControls 
         username='DannieSchu' 
-        onNameChange={() => {}} />
+        onChange={() => {}} 
+        oSubmit={() => {}} />
     );
     expect(wrapper).toMatchSnapshot();
   });
