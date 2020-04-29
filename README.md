@@ -14,7 +14,7 @@ See a GitHub user's profile by entering! When you enter a valid username, the ap
   * Dates when it was created and last updated
 
 ## App Organization
-This app was created using React. Components are separated into stateful container components and stateful presentation components. 
+This app was created using React. Files are separated into stateful container components and stateless presentation components. 
 
 ## API Services 
 User data is sourced from the GitHub API.
