@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<UserDisplay
-  avatar="https://avatars0.githubusercontent.com/u/55268278?v=4"
-  followers="0"
-  following="0"
-  fullName="Dannie Schumaker"
-  url="https://github.com/DannieSchu"
-  username="DannieSchu"
+<Repo
+  dateCreated="2020-01-14T00:49:15Z"
+  dateUpdated="2020-01-14T00:49:15Z"
+  language="JavaScript"
+  repoName="About-Me"
+  repoUrl="https://github.com/DannieSchu/About-Me"
 />
 `;

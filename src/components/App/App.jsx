@@ -1,15 +1,14 @@
 import React from 'react';
-import UserDisplay from '../UserDisplay/UserDisplay.jsx';
+import Repo from '../Repos/Repo.jsx';
 
 export default function App() {
   return (
-    <UserDisplay
-      avatar="https://avatars0.githubusercontent.com/u/55268278?v=4"
-      fullName="Dannie Schumaker"
-      username="DannieSchu"
-      followers="0"
-      following="0"
-      url="https://github.com/DannieSchu"
+    <Repo
+      repoName="About-Me"
+      repoUrl="https://github.com/DannieSchu/About-Me"
+      language="JavaScript"
+      dateCreated="2020-01-14T00:49:15Z"
+      dateUpdated="2020-01-14T00:49:15Z"
     />
   );
 }
