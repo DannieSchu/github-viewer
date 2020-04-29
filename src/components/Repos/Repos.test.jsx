@@ -5,19 +5,19 @@ import Repos from './Repos.jsx';
 describe('Repos', () => {
   it('matches a snapshot', () => {
     const repos = [{      
-      repoName: 'About-Me',
+      name: 'About-Me',
       id: 3529521,
-      repoUrl: 'https://github.com/DannieSchu/About-Me',
+      html_url: 'https://github.com/DannieSchu/About-Me',
       language: 'JavaScript',
-      dateCreated: '2020-01-14T00:49:15Z',
-      dateUpdated: '2020-01-14T00:49:15Z'
+      created_at: '2020-01-14T00:49:15Z',
+      updated_at: '2020-01-14T00:49:15Z'
     }, {
-      repoName: 'Bus-Mall',
+      name: 'Bus-Mall',
       id: 846732,
-      repoUrl: 'https://github.com/DannieSchu/Bus-Mall',
+      html_url: 'https://github.com/DannieSchu/Bus-Mall',
       language: 'JavaScript',
-      dateCreated: '2020-01-14T00:49:15Z',
-      dateUpdated: '2020-01-14T00:49:15Z'
+      created_at: '2020-01-14T00:49:15Z',
+      updated_at: '2020-01-14T00:49:15Z'
     }];
 
     const wrapper = shallow(

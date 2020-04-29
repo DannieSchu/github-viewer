@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Repo = ({ repoName, repoUrl, language, dateCreated, dateUpdated }) => {
+const Repo = ({ name, html_url, language, created_at, updated_at }) => {
   return (
     <>
-      <a href={repoUrl} target="blank">{repoName}</a>
+      <a href={html_url} target="blank">{name}</a>
       <p>Language: {language}</p>
-      <p>Created: {dateCreated}</p>
-      <p>Updated: {dateUpdated}</p>
+      <p>Created: {created_at}</p>
+      <p>Updated: {updated_at}</p>
     </>
   );
 };
 
 Repo.propTypes = {
-  repoName: PropTypes.string.isRequired,
-  repoUrl: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  html_url: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
-  dateCreated: PropTypes.string.isRequired,
-  dateUpdated: PropTypes.string.isRequired
+  created_at: PropTypes.string.isRequired,
+  updated_at: PropTypes.string.isRequired
 };
 
 export default Repo;

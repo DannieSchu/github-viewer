@@ -10,20 +10,23 @@ const Repos = ({ repos }) => {
   ));
 
   return (
-    <ul>
-      {individualRepos}
-    </ul>
+    <>
+      <h2>Repositories</h2>
+      <ul>
+        {individualRepos}
+      </ul>
+    </>
   );
 };
 
 Repos.propTypes = {
   repos: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
-    repoName: PropTypes.string.isRequired,
-    repoUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
     language: PropTypes.string.isRequired,
-    dateCreated: PropTypes.string.isRequired,
-    dateUpdated: PropTypes.string.isRequired
+    created_at: PropTypes.string.isRequired,
+    updated_at: PropTypes.string.isRequired
   })).isRequired
 };
 
