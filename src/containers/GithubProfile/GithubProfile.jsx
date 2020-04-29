@@ -3,25 +3,38 @@ import Header from '../../components/Header/Header.jsx';
 import UserControls from '../../components/UserControls/UserControls.jsx';
 import UserDisplay from '../../components/UserDisplay/UserDisplay.jsx';
 import Repos from '../../components/Repos/Repos.jsx';
+import { fetchUser, fetchRepos } from '../../services/githubData.js';
 
 export default class GithubProfile extends Component {
   state = {
-    input: '',
+    username: '',
     profile: {},
     repos: []
   }
 
+  handleSubmit = e => {
+    e.preventDefault();
+    fetchUser(this.state.username)
+      .then(profile => this.setState({ profile }));
+
+    fetchRepos(this.state.username)
+      .then(repos => this.setState({ repos }));
+  }
+
   handleChange = ({ target }) => {
-    this.setState({ input: target.value });
+    this.setState({ username: target.value });
   }
 
   render() {
-    const { profile, repos } = this.state;
+    const { repos, profile, username } = this.state;
 
     return (
       <>
         <Header />
-        <UserControls onNameChange={this.handleChange} />
+        <UserControls 
+          username={username}
+          onChange={this.handleChange} 
+          onSubmit={this.handleSubmit} />
         <UserDisplay {...profile} />
         <Repos repos={repos} />
       </>
