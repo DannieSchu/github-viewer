@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <h1>
-      GitHub Viewer
-    </h1>
+    <header>
+      <h1>GitHub Viewer</h1>
+    </header>
   );
 };
 
