@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repo matches a snapshot 1`] = `
+<Fragment>
+  <a
+    href="https://github.com/DannieSchu/About-Me"
+    target="blank"
+  >
+    About-Me
+  </a>
+  <p>
+    Language: 
+    JavaScript
+  </p>
+  <p>
+    Created: 
+    2020-01-14T00:49:15Z
+  </p>
+  <p>
+    Updated: 
+    2020-01-14T00:49:15Z
+  </p>
+</Fragment>
+`;
